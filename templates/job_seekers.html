@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>واجهة الباحثين عن عمل</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>واجهة الباحثين عن عمل</h1>
+
+    <form action="{{ url_for('job_seekers') }}" method="post" enctype="multipart/form-data">
+        <label for="name">الاسم الكامل:</label><br>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">البريد الإلكتروني:</label><br>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="resume">رفع السيرة الذاتية:</label><br>
+        <input type="file" id="resume" name="resume" accept=".pdf,.docx" required><br>
+
+        <button type="submit">إرسال</button>
+    </form>
+
+    {% if success_message %}
+        <p style="color: green;">{{ success_message }}</p>
+    {% endif %}
+    
+    {% if error_message %}
+        <p style="color: red;">{{ error_message }}</p>
+    {% endif %}
+</body>
+</html>

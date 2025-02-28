@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نظام تحليل وفرز السير الذاتية</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>مرحبًا بك في منصة تحليل وفرز السير الذاتية</h1>
+    </header>
+    
+    <main class="container">
+        <div class="card">
+            <h2>الشركات</h2>
+            <p>يمكن للشركات تسجيل الدخول وإضافة الوظائف واستقبال طلبات التوظيف.</p>
+            <a href="{{ url_for('companies') }}" class="btn">ابدأ</a>
+        </div>
+        <div class="card">
+            <h2>الباحثين عن العمل</h2>
+            <p>يمكن للباحثين عن عمل تحميل سيرهم الذاتية والعثور على الوظائف المناسبة.</p>
+            <a href="{{ url_for('job_seekers') }}" class="btn">ابدأ</a>
+        </div>
+    </main>
+</body>
+</html>
