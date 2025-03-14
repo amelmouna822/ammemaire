@@ -60,8 +60,8 @@ h1 {
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
 }
 
-.card img {
-    width: 50px;
+.card-img {
+    width: 100px;
     margin-bottom: 10px;
 }
 

@@ -1,29 +1,17 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom , #23036A, #3D1C82);
-    color: white;
-    display: flex;
-    align-items: center;
-    padding: 0;
-}
-.container {
+
+.welcome-container {
+    position: relative;
     width: 90%;
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 20px;
+    height: 100%;
+    
+}
+.welcome-image{
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
 }
  
-main h1{
-    font-size: 14px;
-    font-weight: bold;
-    margin: 20px 0;
-}
-main p{
-    font-size: 14px;
-    line-height: 1.5;
-    margin-bottom: 20px;
-}
+
 .next-button {
     background-color: #00c471;
     color: white;
