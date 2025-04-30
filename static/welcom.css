@@ -4,11 +4,10 @@
    box-sizing: border-box;
 } 
 body {
-    font-family: 'Arial',sans-serif;
     margin: 0;
+    font-family: Arial, sans-serif;
     background-color: rgba(128, 93, 67);
     color: white;
-    
 }
 ul {
     list-style: none;
@@ -99,7 +98,7 @@ header {
     border: 1px solid #fff;
 }
 .hero-image img {
-    max-width: 300px;
+    max-width: 350px;
     width: 100%;
     height: auto;
     border-radius: 15px;

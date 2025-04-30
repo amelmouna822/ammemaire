@@ -16,11 +16,18 @@
             <nav>
                 <ul>
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#jobs">Jobs</a></li>
-                    <li><a href="#condidates">Condidates</a></li>
-                    <li><a href="#companies">Companies</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li>
+                        <a 
+                        href="{{ url_for('about') }}">About</a>
+                    </li>
+                    <li>
+                        <a 
+                        href="{{ url_for('Jobs')}}">Jobs</a>
+                    </li>
+                    <li>
+                        <a 
+                        href="{{ url_for('contact')}}">Contact</a>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -34,8 +41,8 @@
                            Sign up now to discover the best <br>
                            opportunities that match your profile.</p>
                         <div class="hero-buttons">
-                            <a href="{{ url_for('home')}}" class="btn">Company Registration</a> 
-                            <a href="{{ url_for('home')}}" class="btn">Condidate Registration</a>                      
+                            <a href="{{ url_for('login_company')}}" class="btn">Company Registration</a> 
+                            <a href="{{ url_for('login_job_seeker')}}" class="btn">Condidate Registration</a>                      
                         </div>
                     </div>
                     <div class="hero-image">
