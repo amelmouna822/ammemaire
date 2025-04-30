@@ -9,7 +9,10 @@
 <body>
     <header>
         <div id="navbar">
-            <img src="{{ url_for('static', filename='images (5).jpeg') }}" alt="cv">
+            <div class="logo-container">
+                <img src="{{ url_for('static', filename='images (5).jpeg') }}" alt="cv" >
+                 <span >Jobs</span>
+            </div>
             <nav>
                 <ul>
                     <li><a href="#home">Home</a></li>
@@ -21,13 +24,25 @@
                 </ul>
             </nav>
         </div>
-        <div class="content">
-            <div class="text-content">
-                <h1>Welcome</h1>
-                <p></p>
-            </div>
-            <img src="{{ url_for('static', filename='unnamed.jpg') }}" alt="image">
-        </div>
+            <div class="hero">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h3>Best Jobs</h3>
+                        <h1>Welcome To Our Smart Platform </h1>
+                        <p> Our platform helps you analyze, sort,<br> 
+                            and match job seekers resumes with company job offers.<br>
+                           Sign up now to discover the best <br>
+                           opportunities that match your profile.</p>
+                        <div class="hero-buttons">
+                            <a href="{{ url_for('home')}}" class="btn">Company Registration</a> 
+                            <a href="{{ url_for('home')}}" class="btn">Condidate Registration</a>                      
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <img src="{{ url_for('static', filename='unnamed.jpg') }}" alt="image">
+                    </div>
+                </div>
+            </div> 
             
     </header>
     
