@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Choisir Spécialité - Demandeur</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Choisissez votre spécialité (Demandeur d'emploi)</h2>
+    <form action="{{ url_for('job_seekers') }}" method="post">
+        <input type="text" name="name" required><br><br>
+        <label><input type="radio" name="specialite" value="informatique"> Informatique</label><br>
+        <label><input type="radio" name="specialite" value="mecanique"> Mécanique</label><br>
+        <label><input type="radio" name="specialite" value="education"> Éducation</label><br>
+        <label><input type="radio" name="specialite" value="cours"> Cours Particuliers</label><br><br>
+        <a href="{{ url_for('job_seekers')}}" class="btn">Suivant</a>
+    </form>
+</body>
+</html>

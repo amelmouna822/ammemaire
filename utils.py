@@ -15,9 +15,9 @@ def extract_text_from_docx(file):
     return docx2txt.process(file)
 
 def process_resume(file):
-    if file.type == "application/pdf":
+    if file.mimetype == "application/pdf":
         return extract_text_from_pdf(file)
-    elif file.type == "application/vnd.openxmlformats-officedocument.wordprocessingml.document":
+    elif file.mimetype == "application/vnd.openxmlformats-officedocument.wordprocessingml.document":
         return extract_text_from_docx(file)
     else:
         return "صيغة الملف غير مدعومة!"
